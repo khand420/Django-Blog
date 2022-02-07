@@ -1,0 +1,91 @@
+ {% load static %}
+{% load  blog_tags %} 
+
+ <div class="col-md-4 ">
+          <div class="widget-sidebar sidebar-search">
+              <p><a href="#">Subscribe to my code2hell Feed</a></p>   <!--{% url "blog:post_feed" %}-->
+            <h5 class="sidebar-title">Search</h5>
+            <div class="sidebar-content">
+              <form method="get" action="/search">
+                <div class="input-group">
+                  <input type="search" class="form-control" placeholder="Search for..." aria-label="Search for... "name="query" id="query">
+                  <span class="input-group-btn">
+                    <button class="btn btn-secondary btn-search" type="submit">
+                      <span class="ion-android-search"></span>
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="widget-sidebar">
+          <p>We've written {% total_posts %} posts so far</p>
+            <h5 class="sidebar-title">Recent Post</h5>
+            <div class="sidebar-content">
+              <ul class="list-sidebar">
+                <b>
+               {% show_latest_posts 5%}
+                </b>
+              </ul>   
+            </div>
+          </div>
+          <div class="widget-sidebar">
+            <h5 class="sidebar-title">Most Commented Posts</h5>
+            <div class="sidebar-content">
+
+            {% get_most_commented_posts as most_commented_posts %}
+              <ul class="list-sidebar">
+               {% for post in most_commented_posts %}
+               <b><li><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li></b>
+               {% endfor %}
+              </ul>             
+
+            </div>
+          </div>
+          <div class="widget-sidebar widget-tags">
+            <h5 class="sidebar-title">Tags</h5>
+            <div class="sidebar-content">
+              <ul>
+                <li>
+                  <a href="#">PROGRAMMING</a>
+                </li>
+                <li>
+                  <a href="#">CODE</a>
+                </li>
+                <li>
+                  <a href="#">Java Script</a>
+                </li>
+                <li>
+                  <a href="#">Node Express</a>
+                </li>
+                <li>
+                  <a href="#">Angular</a>
+                </li>
+                <li>
+                  <a href="#">Python</a>
+                </li>
+                <li>
+                  <a href="#">Django</a>
+                </li>
+                <li>
+                  <a href="#">SqlAlchemy</a>
+                </li>
+                <li>
+                  <a href="#">MongoDB</a>
+                </li>
+                <li>
+                  <a href="#">PostgreSql</a>
+                </li>
+                <li>
+                  <a href="#">AWS</a>
+                </li>  
+                <li>
+                  <a href="#">Microsoft Azure</a>
+                </li>
+                <li>
+                  <a href="#">GitHub Copilot</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>

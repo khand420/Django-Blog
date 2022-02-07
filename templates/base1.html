@@ -1,0 +1,36 @@
+{% load blog_tags %}
+{% load static %}
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <link href="{% static "css/blog.css" %}" rel="stylesheet">
+</head>
+<body>
+  <div id="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+  <div id="sidebar">
+    <h2>CodeBlog</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae rerum, officia numquam fugiat suscipit sequi consectetur exercitationem fugit voluptatem asperiores quos perspiciatis. Molestiae, expedita porro? Quae praesentium modi molestiae earum?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates maiores vitae deleniti? Tempore ducimus delectus illo, cumque odio molestiae architecto velit atque magnam facilis nostrum voluptas quos repellendus eius cupiditate quae adipisci harum nulla ipsa officia? Blanditiis, voluptates? Molestiae qui tempore, nam deserunt expedita magnam ab recusandae. A corrupti blanditiis veritatis nihil. Vel molestiae porro repudiandae maxime suscipit aut tenetur?</p>
+
+    <p>I've written {% total_posts %} posts so far</p>
+     
+    <p><a href="{% url "blog:post_feed" %}">Subscribe to my codeBlog Feed</a></p>
+
+     <h3>Latest Posts</h3>
+     {% show_latest_posts 3%}
+
+     <h3>Most Commented Posts</h3>
+     {% get_most_commented_posts as most_commented_posts %}
+     <ul>
+       {% for post in most_commented_posts %}
+          <li><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
+       {% endfor %}
+     </ul>
+
+
+  </div>
+</body>
+</html>

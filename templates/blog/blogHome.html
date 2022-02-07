@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} BlogHome {% endblock title %}
+{% block blogactive %} active {% endblock blogactive %} 
+
+{% block body %}
+
+{% include 'header.html' %}
+
+
+<!--/ Section Blog Star /-->
+  <section id="blog" class="blog-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h4 class="title-a">
+              Latest articles!
+            </h4>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+      {% for post in posts %} 
+        <div class="col-md-4">
+          <div class="card card-blog mb-5">
+            <div class="card-img">
+              {% comment %} <a href="Static/data S.jpg"><img src="Static/data S.jpg" alt="" class="img-fluid"></a> {% endcomment %}
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">{{post.title}}</h6>
+                </div>
+              </div>
+              <p class="card-description">{{post.content|safe|truncatechars:000}}</p>
+              <h3 class="card-title"><a href="/blog/{{post.slug}}">Continue Reading...</a></h3>
+            </div>
+            <div class="card-footer">
+              <div class="post-author">
+                
+                 <!-- <img src="Static/testimonial-4.jpg" alt="" class="avatar rounded-circle"> -->
+                  <a href="/about"><span class="author">{{post.author}}</span></a>
+               
+              </div>
+              <div class="post-date">
+              <small class="outline"> ~{{post.publish}}</small>
+                {% comment %} <span class="outline"> {{post.timeStamp}}</span> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+       
+       {% endfor %}
+      </div>
+    </div> 
+  </section>
+  <!--/ Section Blog End /-->
+
+
+
+
+      {% include "pagination.html" with page=posts %}
+
+      <!--*****Footer****-->
+        {% include 'footer.html' %}
+
+
+ {% endblock %}

@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Search Results {% endblock title %}
+{% block blogactive %} active {% endblock blogactive %} 
+
+
+{% block body %}
+
+{% include 'header.html' %}
+
+
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="">
+            <div class="article-content">
+
+    <h2>Search results : </h2>
+    {% if allPosts|length < 1 %}
+   <p>No search results</p>
+    Your search query : <b>{{query}}</b> did not match any documents. <br>n
+    Suggestions:
+    <ul>
+    <li>Make sure that all words are spelled correctly.</li>
+    <li>Try more general keywords.</li>
+   <li> Try fewer keywords.</li>
+   <li> Try different keywords.</li>
+    </li>
+    </ul>
+
+
+    {% endif %}
+    
+    
+  
+      <div class="row">
+      {% for post in allPosts  %}
+        <div class="col-md-4 mt-5">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="Static/data S.jpg"><img src="Static/data S.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">{{post.title}}</h6>
+                </div>
+              </div>
+              <p class="card-description">{{post.content|truncatechars:00}}</p>
+              <h3 class="card-title"><a href="/blog/{{post.slug}}">Continue Reading...</a></h3>
+            </div>
+            <div class="card-footer">
+              <div class="post-author">
+                <a href="#">
+                 <!-- <img src="Static/testimonial-4.jpg" alt="" class="avatar rounded-circle"> -->
+                  <span class="author">{{post.author}} </span>
+                </a>
+              </div>
+              <div class="post-date">
+              <small class="outline" href="/blog/about"> ~{{post.publish}}</small>
+                {% comment %} <span class="outline"> {{post.timeStamp}}</span> {% endcomment %}
+              </div>
+            </div>
+          </div>
+        </div>
+       {% endfor %}
+      </div>
+
+           </div>
+          </div>
+        </div>
+        {% include 'sidebar.html' %}
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+   {% include 'footer.html' %}
+    
+ {% endblock %}

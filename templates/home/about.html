@@ -1,0 +1,471 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} About {% endblock title %}
+{% block aboutactive %} active {% endblock aboutactive %}
+
+
+
+{% block body %}
+
+
+ {% include 'header.html' %}
+
+   <!--/ Section Services Star /-->
+  
+        <section id="service" class="services-mf route">
+          <div class="container my-5">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="title-box text-center">
+                  <h3 class="title-a">
+                    About us!
+                  </h3>
+                  <p class="subtitle-a">
+             Code2hell is fortunate to work with many wonderful projects including ecommerce website, dentist websites, financial and law offices websites, construction websites, spa websites, restaurant websites, nonprofits websites etc.
+                  </p>
+                  <div class="line-mf"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+            <div class="col-md-4">
+                <div class="service-box">
+                  <div class="service-ico">
+                    <span class="ico-circle"><i class="ion-code-working"></i></span>
+                  </div>
+                  <div class="service-content">
+                  <!--  <h2 class="s-title">Web Development</h2> -->
+                    <h3 class="s-title">HTML/CSS</h3>
+                    <h3 class="s-title">Prototyping</h3>
+                    <h3 class="s-title">User Testing</h3>
+                    <!-- <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident. -->
+                    </p>
+                  </div>
+                </div>
+              </div>
+               <div class="col-md-4">
+                <div class="service-box">
+                  <div class="service-ico">
+                    <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
+                  </div>
+                  <div class="service-content">
+                   <!-- <h2 class="s-title">Responsive Design</h2> -->
+                    <h3 class="s-title">UI/UX Design</h3>
+                     <h3 class="s-title">Mobile App Design</h3>
+                    <h3 class="s-title">Responsive Design</h3>
+                    <!-- <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident. -->
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-box">
+                  <div class="service-ico">
+                    <span class="ico-circle"><i class="ion-stats-bars"></i></span>
+                  </div>
+                  <div class="service-content">
+                   <!-- <h2 class="s-title">Marketing Services</h2> -->
+                     <h3 class="s-title">Product Strategy</h3>
+                    <h3 class="s-title">Design Sprints</h3>
+                      <h3 class="s-title">UX Strategy</h3>
+                    <!-- <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident. -->
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service-box">
+                  <div class="service-ico">
+                    <span class="ico-circle"><i class="ion-monitor"></i></span>
+                  </div>
+                  <div class="service-content">
+                    <h2 class="s-title">Web Design</h2>
+                    <!-- <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident. -->
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4">
+                <div class="service-box">
+                  <div class="service-ico">
+                    <span class="ico-circle"><i class="ion-camera"></i></span>
+                  </div>
+                  <div class="service-content">
+                    <h2 class="s-title">Photography</h2>
+                    <!-- <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p> -->
+                  </div>
+                </div>
+              </div>
+             
+              <div class="col-md-4">
+                <div class="service-box">
+                  <div class="service-ico">
+                    <span class="ico-circle"><i class="ion-paintbrush"></i></span>
+                  </div>
+                  <div class="service-content">
+                    <h2 class="s-title">Graphic Design</h2>
+                    <!-- <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident. -->
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+        <!--/ Section Services End /-->
+
+        
+        <!--/ Section Portfolio Star /-->
+        <section id="work" class="portfolio-mf sect-pt4 route">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="title-box text-center">
+                  <h3 class="title-a">
+                    Portfolio
+                  </h3>
+                  <p class="subtitle-a">
+                   {% comment %} Code2hell team is fortunate to work with many wonderful projects including ecommerce website, dentist websites, financial and law offices websites, construction websites, spa websites, restaurant websites, nonprofits websites etc. {% endcomment %}
+                  </p>
+                  <div class="line-mf"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="work-box">
+                  <a href="{% static 'img/Bimg/Portfolio/Glamour.jpg' %}" data-lightbox="gallery-mf">
+                    <div class="work-img">
+                      <img src="{% static 'img/Bimg/Portfolio/Glamour.jpg' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="work-content">
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <h2 class="w-title">Glamour</h2>
+                          {% comment %} <div class="w-more">
+                            <span class="w-ctegory">Web Design</span> / <span class="w-date">20 jun. 2020</span>
+                          </div> {% endcomment %}
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="w-like">
+                            <span class="ion-ios-plus-outline"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="work-box">
+                  <a href="{% static 'img/Bimg/Portfolio/4.jpg' %}" data-lightbox="gallery-mf">
+                    <div class="work-img">
+                      <img src="{% static 'img/Bimg/Portfolio/4.jpg' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="work-content">
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <h2 class="w-title">Orson</h2>
+                          {% comment %} <div class="w-more">
+                            <span class="w-ctegory">Web Design</span> / <span class="w-date">5 jun. 2020</span>
+                          </div> {% endcomment %}
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="w-like">
+                            <span class="ion-ios-plus-outline"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="work-box">
+                  <a href="{% static 'img/Bimg/Portfolio/7.jpg' %}" data-lightbox="gallery-mf">
+                    <div class="work-img">
+                      <img src="{% static 'img/Bimg/Portfolio/7.jpg' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="work-content">
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <h2 class="w-title">G.Benson Studio</h2>
+                          {% comment %} <div class="w-more">
+                            <span class="w-ctegory">Web Design</span> / <span class="w-date"> 1 jun. 2020</span>
+                          </div> {% endcomment %}
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="w-like">
+                            <span class="ion-ios-plus-outline"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="work-box">
+                  <a href="{% static 'img/Bimg/Portfolio/8.png' %}" data-lightbox="gallery-mf">
+                    <div class="work-img">
+                      <img src="{% static 'img/Bimg/Portfolio/8.png' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="work-content">
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <h2 class="w-title">Sweet Cake </h2>
+                          {% comment %} <div class="w-more">
+                            <span class="w-ctegory">Web Design</span> / <span class="w-date">25 May. 2020</span>
+                          </div> {% endcomment %}
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="w-like">
+                            <span class="ion-ios-plus-outline"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="work-box">
+                  <a href="{% static 'img/Bimg/Portfolio/5.jpg' %}" data-lightbox="gallery-mf">
+                    <div class="work-img">
+                      <img src="{% static 'img/Bimg/Portfolio/5.jpg' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="work-content">
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <h2 class="w-title">OSHIN</h2>
+                          {% comment %} <div class="w-more">
+                            <span class="w-ctegory">Web Design</span> / <span class="w-date">20 May. 2020</span>
+                          </div> {% endcomment %}
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="w-like">
+                            <span class="ion-ios-plus-outline"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="work-box">
+                  <a href="{% static 'img/Bimg/Portfolio/6.jpg' %}" data-lightbox="gallery-mf">
+                    <div class="work-img">
+                      <img src="{% static 'img/Bimg/Portfolio/6.jpg' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="work-content">
+                      <div class="row">
+                        <div class="col-sm-8">
+                          <h2 class="w-title">Un-code</h2>
+                          {% comment %} <div class="w-more">
+                            <span class="w-ctegory">Web Design</span> / <span class="w-date">18 May. 2020</span>
+                          </div> {% endcomment %}
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="w-like">
+                            <span class="ion-ios-plus-outline"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!--/ Section Portfolio End /-->
+  <div class="title-box text-center">
+             <h5 class="title-a mt-5">WORK EXPERIENCES</h5>
+            <div class="line-mf"></div>
+          </div>
+<!-- Instagram Feed Area -->
+        <div class="instragram-feed-area owl-carousel mb-5">
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="{% static 'img/certificates/5.png' %}" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="https://google.qwiklabs.com/public_profiles/15128f8e-be54-4bd5-816e-63faf963d7d5/badges/896246">
+                        <i class="ti-google" aria-hidden="true"></i>
+                        <span>Google Cloud Platform</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="{% static 'img/certificates/6.png' %}" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="https://google.qwiklabs.com/public_profiles/15128f8e-be54-4bd5-816e-63faf963d7d5/badges/879546">
+                        <i class="ti-google" aria-hidden="true"></i>
+                        <span>Google Cloud Platform</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="{% static 'img/certificates/7.png' %}" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="https://google.qwiklabs.com/public_profiles/15128f8e-be54-4bd5-816e-63faf963d7d5/badges/875604">
+                        <i class="ti-google" aria-hidden="true"></i>
+                        <span>Google Cloud Platform</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="{% static 'img/certificates/8.png' %}" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="https://google.qwiklabs.com/public_profiles/15128f8e-be54-4bd5-816e-63faf963d7d5/badges/875393">
+                        <i class="ti-google" aria-hidden="true"></i>
+                        <span>Google Cloud Platform</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="{% static 'img/certificates/9.png' %}" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="https://google.qwiklabs.com/public_profiles/15128f8e-be54-4bd5-816e-63faf963d7d5/badges/849647">
+                        <i class="ti-google" aria-hidden="true"></i>
+                        <span>Google Cloud Platform</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Single Instagram Item -->
+            <div class="single-instagram-item">
+                <img src="{% static 'img/certificates/10.png' %}" alt="">
+                <div class="instagram-hover-content text-center d-flex align-items-center justify-content-center">
+                    <a href="https://google.qwiklabs.com/public_profiles/15128f8e-be54-4bd5-816e-63faf963d7d5/badges/838324">
+                        <i class="ti-google" aria-hidden="true"></i>
+                        <span>Google Cloud Platform</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+  
+    
+     <!--/ Section Testimonials Star /-->
+        <div class="testimonials paralax-mf bg-image" style="background-image: url({% static 'img/Bimg/1.jpg' %})">
+          <div class="overlay-mf"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div id="testimonial-mf" class="owl-carousel owl-theme">
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="{% static 'img/Bimg/khand1.jpg' %}" alt="" class="rounded-circle b-shadow-a">
+                      <span class="author">Khan_d_</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Full-Stack Developer
+                      </p>
+                      <span class="comit"><i class="fa fa-quote-right"></i></span>
+                    </div>
+                  </div>
+                  <div class="testimonial-box">
+                    <div class="author-test">
+                      <img src="{% static 'img/Bimg/testimonial-4.jpg' %}" alt="" class="rounded-circle b-shadow-a">
+                      <span class="author">Maryam.Raza</span>
+                    </div>
+                    <div class="content-test">
+                      <p class="description lead">
+                        Data-Scientist (IIT-ISM)
+                      </p>
+                      <span class="comit"><i class="fa fa-quote-right"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+  <div class="section-counter paralax-mf bg-image" style="background-image: url({% static 'img/Bimg/1.jpg' %})">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">135</p>
+              <span class="counter-text">WORKS COMPLETED</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">5</p>
+              <span class="counter-text">YEARS OF EXPERIENCE</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ios-people"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">150</p>
+              <span class="counter-text">TOTAL CLIENTS</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">25</p>
+              <span class="counter-text">AWARD WON</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+   <!--*****Footer****-->
+         {% include 'footer.html' %}
+
+{% endblock %}
